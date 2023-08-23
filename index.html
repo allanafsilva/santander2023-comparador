@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="box-container">
+        <header class="text-center">
+            <h2 class="m-3">Comparador</h2>
+        </header>
+        <article class="d-flex flex-column justify-content-center m-3 p-1">
+
+            <div class="container d-flex align-items-center">
+                <input class="m-1" type="text" id="primeiro-num">
+
+                <select class="m-1" name="operadores" id="operadores">
+                    <option value="menor">&lt;</option>
+                    <option value="maior">&gt;</option>
+                    <option value="menorIgual">&le;</option>
+                    <option value="maiorIgual">&ge;</option>
+                    <option value="igual">=</option>
+                    <option value="diferente">!=</option>
+                </select>
+
+                <input class="m-1" type="text" id="segundo-num">
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <button onclick="comparar()" class="btn btn-primary btn-sm m-1">Comparar</button>
+                <p>Resultado:</p>
+                <p id="resultado"></p>
+            </div>
+        </article>
+
+
+    </section>
+
+    <script src="operadores.js"></script>
+</body>
+
+</html>
